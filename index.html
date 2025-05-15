@@ -3,81 +3,247 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>restaurant</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>RED DINNER</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url('pngtree-seamless-monochrome-pattern-fastfood-picture-image_1162847.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: repeat;
+      min-height: 100vh;
+      color: #fff;
+    }
+
+    header {
+      background-color: #0c0b0b;
+      color: white;
+      padding: 25px;
+      text-align: center;
+    }
+
+    h1 {
+      color: darkred;
+      font-size: 3rem;
+      margin: 0;
+    }
+
+    .contenido {
+      max-width: 800px;
+      margin: 20px auto 40px;
+      padding: 0 15px;
+    }
+
+    .seccion {
+      background-color: rgba(12, 11, 11, 0.75);
+      border: 2px solid darkred;
+      border-radius: 12px;
+      padding: 25px 30px;
+      margin-bottom: 30px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+    }
+
+    .principio {
+      font-size: 2rem;
+      text-align: center;
+      margin-top: 0;
+      margin-bottom: 20px;
+      font-weight: 700;
+    }
+
+    .nombre {
+      font-weight: bold;
+      font-size: 1.15rem;
+      margin-top: 25px;
+      margin-bottom: 4px;
+    }
+
+    .descripcion {
+      font-style: italic;
+      color: #dcdcdc;
+      font-size: 0.95rem;
+      margin-bottom: 18px;
+    }
+
+    p {
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Sección de contacto abajo */
+    .contacto {
+      background-color: rgba(12, 11, 11, 0.85);
+      border: 3px solid darkred;
+      border-radius: 15px;
+      padding: 30px 25px;
+      text-align: center;
+      box-shadow: 0 8px 15px rgba(0,0,0,0.5);
+      max-width: 500px;
+      margin: 40px auto 60px;
+      font-size: 1.1rem;
+    }
+
+    .contacto h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #e4405f;
+    }
+
+    .contacto p {
+      margin: 12px 0;
+    }
+
+    .instagram-link {
+      color: #e4405f;
+      font-weight: bold;
+      font-size: 1.25rem;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .instagram-link:hover {
+      color: #c13584;
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2.2rem;
+      }
+
+      .principio {
+        font-size: 1.6rem;
+      }
+
+      .nombre {
+        font-size: 1rem;
+      }
+
+      .descripcion {
+        font-size: 0.85rem;
+      }
+
+      .contenido {
+        padding: 0 10px;
+      }
+
+      .seccion {
+        padding: 20px 20px;
+        margin-bottom: 25px;
+      }
+
+      .contacto {
+        max-width: 90%;
+        padding: 20px 15px;
+        font-size: 1rem;
+      }
+    }
+  </style>
 </head>
 <body>
   <header>
     <h1>RED DINNER 🍷</h1>
   </header>
 
-  <h2 class="principio">Entrada</h2>
-  <p>Texto sobre la entrada del menú o descripción.</p>
+  <div class="contenido">
 
-
-  <h2 class="principio">Platos</h2>
-
-  <p class="nombre">Hambuerguesa simple .. $10.000 </p>
-  <p class="descripcion">con queso y carne.  </p>
-
- <p class="nombre">Hambuerguesa completa .. $10.000 </p>
-  <p class="descripcion">con huevo,queso,cebolla caramelizada,<br>bacon,cheddar y 2 medallones de carne. </p>
-
- <p class="nombre">Lomito simple .. $10.000 </p>
-  <p class="descripcion">con queso y carne. </p>
-
- <p class="nombre">Lomito completo .. $10.000 </p>
-  <p class="descripcion">con queso,huevo,cheddar,tomate,lechuga <br>cebolla caramelizada y con mucho amor❤️.  </p>
-<div class="comida">
-
- <p class="nombre">Milanesa .. $10.000 </p>
-  <p class="descripcion">¿la mejor milanesa de carne?.  </p>
-
- <p class="nombre">Suprema .. $10.000 </p>
-  <p class="descripcion">la milanesa de pollo unica.  </p>
-
- <p class="nombre">Napolitana .. $10.000 </p>
-  <p class="descripcion">con tomate,hierbas <br>y un queso irresistible. </p>
-
- <p class="nombre">Milanesa a Caballo .. $10.000 </p>
-  <p class="descripcion"> con queso huevos <br>y un  sabor unico.</p>
-
-</div>
-
-
-
-  <h2 class="principio">Bebidas</h2>
+    <div class="seccion">
+      <h2 class="principio">Entrada</h2>
+      <p class="nombre">picada argentina ..$1.000 </p>
+      <p class="descripcion">salame caroya quesse y aceitunas rellenas</p>
+        <p class="nombre">bukket ..$1.000</p>
+      <p class="descripcion">entrada tradicional de egipto</p>
   
-  <p class="nombre">agua saborizada 500ml .. $1.000</p>
-  <p class="nombre">agua saborizada 1lt .. $1.000</p>
-<p class="nombre">agua saborizada 1,5lt  .. $1.000</p>
-<p class="nombre">coca 500ml  .. $1.000</p>
-<p class="nombre">coca 1lt  .. $1.000</p>
-<p class="nombre">coca 1,5lt  .. $1.000</p>
-<p class="nombre">pepsi 500ml  .. $1.000</p>
+    </div>
 
+    <div class="seccion">
+      <h2 class="principio">Platos</h2>
 
-<p class="nombre">pepsi 1lt  .. $1.000</p>
-<p class="nombre"> pepsi 1,5lt .. $1.000</p>
-<p class="nombre">cerveza scheider  .. $1.000</p>
-<p class="nombre"> cerveza corona  .. $1.000</p>
-<p class="nombre">cerveza bramha  .. $1.000</p>
-<p class="nombre">vino  .. $1.000</p>
-<p class="nombre">malbec  .. $1.000</p>
+      <p class="nombre">Hambuerguesa simple .. $10.000</p>
+      <p class="descripcion">con queso y carne.</p>
 
+      <p class="nombre">Hambuerguesa completa .. $10.000</p>
+      <p class="descripcion">con huevo, queso, cebolla caramelizada,<br>bacon, cheddar y 2 medallones de carne.</p>
 
-  <h2 class="principio">Postre</h2>
-<p class="nombre">helado chock </p>
-  <p class="descripcion">helado de vainilla con una barrita <br> de chocolate amargo. </p>
+      <p class="nombre">Lomito simple .. $10.000</p>
+      <p class="descripcion">con queso y carne.</p>
 
-<p class="nombre">bounneet </p>
-  <p class="descripcion">crema de banana con durazno <br>y salsa de chocolate. </p>
+      <p class="nombre">Lomito completo .. $10.000</p>
+      <p class="descripcion">con queso, huevo, cheddar, tomate, lechuga <br>cebolla caramelizada y con mucho amor ❤️.</p>
 
-<p class="nombre">flan casero </p>
-  <p class="descripcion">flan echo de la casa con una <br>    crema pasttele </p>
+      <p class="nombre">Milanesa .. $10.000</p>
+      <p class="descripcion">¿La mejor milanesa de carne?</p>
 
-  <p class="nombre">helado frances </p>
-  <p class="descripcion">crema de frambuesa con una bocha <br> de helado suizo. </p>
+      <p class="nombre">Suprema .. $10.000</p>
+      <p class="descripcion">La milanesa de pollo única.</p>
+
+      <p class="nombre">Napolitana .. $10.000</p>
+      <p class="descripcion">con tomate, hierbas <br>y un queso irresistible.</p>
+
+      <p class="nombre">Milanesa a Caballo .. $10.000</p>
+      <p class="descripcion">con queso, huevos <br>y un sabor único.</p>
+    </div>
+
+    <div class="seccion">
+      <h2 class="principio">Bebidas</h2>
+
+      <p class="nombre">Agua saborizada 500ml .. $1.000</p>
+      <p class="nombre">Agua saborizada 1lt .. $1.000</p>
+      <p class="nombre">Agua saborizada 1,5lt .. $1.000</p>
+      <p class="nombre">Coca 500ml .. $1.000</p>
+      <p class="nombre">Coca 1lt .. $1.000</p>
+      <p class="nombre">Coca 1,5lt .. $1.000</p>
+      <p class="nombre">Pepsi 500ml .. $1.000</p>
+      <p class="nombre">Pepsi 1lt .. $1.000</p>
+      <p class="nombre">Pepsi 1,5lt .. $1.000</p>
+      <p class="nombre">Cerveza Schneider .. $1.000</p>
+      <p class="nombre">Cerveza Corona .. $1.000</p>
+      <p class="nombre">Cerveza Brahma .. $1.000</p>
+      <p class="nombre">Vino .. $1.000</p>
+      <p class="nombre">Malbec .. $1.000</p>
+    </div>
+
+    <div class="seccion">
+      <h2 class="principio">Postre</h2>
+
+      <p class="nombre">Helado Chock</p>
+      <p class="descripcion">Helado de vainilla con una barrita <br>de chocolate amargo.</p>
+
+      <p class="nombre">Bounneet</p>
+      <p class="descripcion">Crema de banana con durazno <br>y salsa de chocolate.</p>
+
+      <p class="nombre">Flan casero</p>
+      <p class="descripcion">Flan hecho en casa con <br>crema pastelera.</p>
+
+      <p class="nombre">Helado francés</p>
+      <p class="descripcion">Crema de frambuesa con una bocha <br>de helado suizo.</p>
+    </div>
+
+    <!-- Sección Contacto -->
+    <div class="contacto">
+      <h2>Contacto del local</h2>
+      <p>📸 Instagram: <a href="" target="_blank" class="instagram-link">@mi.negocio_web</a></p>
+      <p>📍 Ubicación: Calle Falsa 123, Ciudad</p>
+      <p>📞 Teléfono: +54 9 11 1234-5678</p>
+    </div>
+
+  </div>
+      <div class="contacto">
+      <h2>quieres tu propia pagina web hablame a mi instagram </h2>
+      <p>📸 Instagram: <a href="https://instagram.com/mi.negocio_web" target="_blank" class="instagram-link">@mi.negocio_web</a></p>
+      <p>📍 Ubicación: Calle Falsa 123, Ciudad</p>
+      <p>📞 Teléfono: +54 9 11 1234-5678</p>
+    </div>
+
+  </div>
+</body>
+</html>
 
 </body>
 </html>
